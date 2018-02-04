@@ -11,6 +11,10 @@
 		633646C11B8C657400FF45E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633646C01B8C657400FF45E2 /* ViewController.swift */; };
 		633646C61B8C657400FF45E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 633646C51B8C657400FF45E2 /* Images.xcassets */; };
 		633646C91B8C657400FF45E2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 633646C71B8C657400FF45E2 /* LaunchScreen.xib */; };
+		7F062D972026D7ED0096A039 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F062D962026D7ED0096A039 /* Question.swift */; };
+		7F062D992026DD2D0096A039 /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F062D982026DD2D0096A039 /* QuestionBank.swift */; };
+		7F062D9E2027434D0096A039 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F062D9B2027434D0096A039 /* ProgressHUD.m */; };
+		7F062D9F2027434D0096A039 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7F062D9C2027434D0096A039 /* ProgressHUD.bundle */; };
 		ADEB04ED1FBDFEAA00026359 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 633646C21B8C657400FF45E2 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +26,12 @@
 		633646C31B8C657400FF45E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		633646C51B8C657400FF45E2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		633646C81B8C657400FF45E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7F062D962026D7ED0096A039 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		7F062D982026DD2D0096A039 /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
+		7F062D9A2027434C0096A039 /* Quizzler-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Quizzler-Bridging-Header.h"; sourceTree = "<group>"; };
+		7F062D9B2027434D0096A039 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		7F062D9C2027434D0096A039 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		7F062D9D2027434D0096A039 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +75,12 @@
 		633646BC1B8C657400FF45E2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7F062D9C2027434D0096A039 /* ProgressHUD.bundle */,
+				7F062D9D2027434D0096A039 /* ProgressHUD.h */,
+				7F062D9B2027434D0096A039 /* ProgressHUD.m */,
 				633646C71B8C657400FF45E2 /* LaunchScreen.xib */,
 				633646BD1B8C657400FF45E2 /* Info.plist */,
+				7F062D9A2027434C0096A039 /* Quizzler-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -83,6 +97,8 @@
 		EBB1C72C1B946C530011F5C3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7F062D962026D7ED0096A039 /* Question.swift */,
+				7F062D982026DD2D0096A039 /* QuestionBank.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -128,7 +144,7 @@
 				TargetAttributes = {
 					633646B81B8C657400FF45E2 = {
 						CreatedOnToolsVersion = 6.4;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 0920;
 					};
 				};
 			};
@@ -155,6 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F062D9F2027434D0096A039 /* ProgressHUD.bundle in Resources */,
 				ADEB04ED1FBDFEAA00026359 /* Main.storyboard in Resources */,
 				633646C91B8C657400FF45E2 /* LaunchScreen.xib in Resources */,
 				633646C61B8C657400FF45E2 /* Images.xcassets in Resources */,
@@ -168,6 +185,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F062D972026D7ED0096A039 /* Question.swift in Sources */,
+				7F062D992026DD2D0096A039 /* QuestionBank.swift in Sources */,
+				7F062D9E2027434D0096A039 /* ProgressHUD.m in Sources */,
 				633646C11B8C657400FF45E2 /* ViewController.swift in Sources */,
 				633646BF1B8C657400FF45E2 /* AppDelegate.swift in Sources */,
 			);
@@ -302,9 +322,9 @@
 				INFOPLIST_FILE = Quizzler/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.londonappbrewery.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.titas.Quizzler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Quizzler/Quizzler-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
@@ -319,9 +339,9 @@
 				INFOPLIST_FILE = Quizzler/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.londonappbrewery.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.titas.Quizzler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Quizzler/Quizzler-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 			};
